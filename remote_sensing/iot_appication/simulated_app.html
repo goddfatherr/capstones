@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Remote Sensing Dashboard</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="js/simulated_api_calls.js"></script>
+</head>
+<body>
+	<h1>Sensing and Control Dashboard</h1>
+	<div class="sensor">
+		<button onclick="readPresistor()">Read Presistor</button>
+		<div>Presistor Data: <span id="presistorData"></span></div>
+	</div>
+    <div class="sensor">
+        <button onclick="readTemp()">Read Temperature</button>
+        <div>Temperature Data: <span id="tempData"></span></div>
+    </div>
+    
+    <div class="sensor">
+        <button onclick="readHumd()">Read Humidity</button>
+        <div>Humidity Data: <span id="humdData"></span></div>
+    </div>
+    
+    <div class="sensor">
+        <button onclick="readSmoisture()">Read Soil Moisture</button>
+        <div>Soil Moisture Data: <span id="smoistureData"></span></div>
+    </div>
+    
+    <div class="sensor">
+        <button onclick="readPir()">Read Infrared</button>
+        <div>Infrared Data: <span id="pirData"></span></div>
+    </div>
+    <div class="sensor">
+        <button onclick="soundSiren()">Sound Siren</button>
+        <div>Siren Ringing: <span id="soundSiren"></span></div>
+    </div>
+</body>
+</html>    
